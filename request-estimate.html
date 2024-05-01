@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/output.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <header class="flex flex-col border-none lg:border-b lg:border-slate-800" x-data="{open:false}">
+        <div class="hidden md:flex bg-white py-2 px-20 justify-between">
+            <ul class="flex justify-between gap-x-10">
+                <li class="flex gap-x-2 items-center">
+                    <div class="size-4">
+                        <svg class="size-4 fill-black">
+                            <use href="#phone-icon"></use>
+                        </svg>
+                    </div>
+
+                    <p class="text-slate-900">
+                        +2348123916766
+                    </p>
+
+                </li>
+
+                <li class="flex gap-x-2 items-center">
+                    <div class="size-4">
+                        <svg class="size-4 fill-black">
+                            <use href="#email-icon"></use>
+                        </svg>
+                    </div>
+
+                    <p class="text-slate-900">
+                        hello@ecoshield.ng
+                    </p>
+
+                </li>
+
+                <li class="flex gap-x-2 items-center">
+                    <div class="size-4">
+                        <svg class="size-4 fill-black">
+                            <use href="#location-icon"></use>
+                        </svg>
+                    </div>
+
+                    <p class="text-slate-900">
+                        99 Roving St., Big City, PKU 23456
+                    </p>
+
+                </li>
+            </ul>
+            <div class="flex justify-between gap-x-5">
+
+                <a href="https://api.whatsapp.com/send?phone=2348123916766"
+                    class="bg-black hover:scale-95 transition-all hover:shadow-lg inline-flex justify-center items-center size-10 rounded-full">
+                    <svg class="size-5 fill-white">
+                        <use href="#whatsapp-icon"></use>
+                    </svg>
+                </a>
+
+                <a href="tel:08123916766"
+                    class="bg-black hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
+                    <svg class="size-5 fill-white">
+                        <use href="#phone-icon"></use>
+                    </svg>
+                </a>
+
+                <a href="https://www.instagram.com/ecoshield_fumigation/"
+                    class="bg-black hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
+                    <svg class="size-5 fill-white">
+                        <use href="#instagram-icon"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class=" w-full py-1 bg-black    border-b border-transparent" :class="{'border-slate-400':open}">
+            <nav class="flex justify-between items-center mx-5 lg:mx-24">
+                <a href="./">
+                    <img src="./images/ecoshielf-logo.jpg" class="size-14 rounded-full" />
+                </a>
+                <ul class="desktop-list">
+                    <a href="./"
+                        class="list-btn bg-white hover:bg-black shadow-sm shadow-transparent cursor-pointer block hover:shadow-teal-500 text-black hover:text-white transition-all px-3 py-2 rounded-md">
+                        Back Home </a>
+
+                </ul>
+
+                <div class="flex justify-between gap-x-2 lg:hidden">
+
+                    <a href="https://api.whatsapp.com/send?phone=2348123916766"
+                        class="bg-white hover:scale-95 transition-all hover:shadow-lg inline-flex justify-center items-center size-10 rounded-full">
+                        <svg class="size-5 fill-black">
+                            <use href="#whatsapp-icon"></use>
+                        </svg>
+                    </a>
+
+                    <a href="tel:08123916766"
+                        class="bg-white hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
+                        <svg class="size-5 fill-black">
+                            <use href="#phone-icon"></use>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.instagram.com/ecoshield_fumigation/"
+                        class="bg-white hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
+                        <svg class="size-5 fill-black">
+                            <use href="#instagram-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+
+            </nav>
+
+
+        </div>
+
+        </div>
+
+
+    </header>
+
+    <!--------  HERO SECTION ------->
+
+    <!-- Hire Us -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div class="max-w-xl mx-auto">
+            <div class="text-center">
+                <h1
+                    class="text-3xl uppercase font-[900] text-black sm:text-4xl dark:text-white flex gap-x-2 items-center lg:block">
+                    <a href="./" class="text-base lg:hidden font-normal lowercase underline">Back</a> Get a free
+                    estimate
+                </h1>
+                <p class="mt-1 text-gray-600 dark:text-neutral-400">
+                    Tell us your desired estimate and we’ll be in touch immediately.
+                </p>
+            </div>
+
+            <div class="mt-12">
+                <!-- Form -->
+                <form>
+                    <div class="grid gap-4 lg:gap-6">
+                        <!-- Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                            <div>
+                                <label for="firstname"
+                                    class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">First
+                                    Name</label>
+                                <input type="text" name="firstname" id="firstname"
+                                    class="py-3 px-4 block w-full rounded-lg text-sm focus:border-blue-500  disabled:opacity-50 disabled:pointer-events-none bg-neutral-100 border-neutral-400 text-black placeholder-neutral-500 focus:ring-neutral-400">
+                            </div>
+
+                            <div>
+                                <label for="lastname"
+                                    class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Last
+                                    Name</label>
+                                <input type="text" name="lastname" id="lastname"
+                                    class="py-3 px-4 block w-full rounded-lg text-sm focus:border-blue-500  disabled:opacity-50 disabled:pointer-events-none bg-neutral-100 border-neutral-400 text-black placeholder-neutral-500 focus:ring-neutral-400">
+                            </div>
+                        </div>
+                        <!-- End Grid -->
+
+                        <div>
+                            <label for="location"
+                                class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Location</label>
+
+                            <select
+                                class=" bg-neutral-100 mt-1 block w-full rounded-md border border-neutral-400 pl-3 py-3 px-4  pr-10 text-base focus:border-black focus:outline-none focus:ring-neutral-400 sm:text-sm">
+
+                                <option value="1">Apple</option>
+                                <option value="2">Banana</option>
+                                <option value="3">Orange</option>
+                            </select>
+
+                        </div>
+
+                        <div>
+                            <label for="target_pest"
+                                class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Target
+                                Pest(s)?</label>
+                            <input type="text" name="target_pest" id="target_pest" autocomplete="email"
+                                placeholder="Rats, Cockroaches"
+                                class="py-3 px-4 block w-full rounded-lg text-sm focus:border-blue-500  disabled:opacity-50 disabled:pointer-events-none bg-neutral-100 border-neutral-400 text-black placeholder-neutral-500 focus:ring-neutral-400">
+
+
+                        </div>
+
+
+                        <div>
+                            <label for="property_type"
+                                class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Property
+                                Type</label>
+
+                            <select name="property_type"
+                                class=" bg-neutral-100 mt-1 block w-full rounded-md border border-neutral-400 pl-3 py-3 px-4  pr-10 text-base focus:border-black focus:outline-none focus:ring-neutral-400 sm:text-sm">
+
+                                <option>Select property type</option>
+                                <option value="Residential">Residential</option>
+                                <option value="Commercial">Commercial</option>
+                                <option value="Other">Other</option>
+
+                            </select>
+
+                            <div x-show="false">
+
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <label for="compound"
+                                class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Compound</label>
+
+                            <select name="compound"
+                                class=" bg-neutral-100 mt-1 block w-full rounded-md border border-neutral-400 pl-3 py-3 px-4  pr-10 text-base focus:border-black focus:outline-none focus:ring-neutral-400 sm:text-sm">
+                                <option class="bg-gray-200">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+
+                            </select>
+
+                            <div x-show="false">
+
+                            </div>
+
+                        </div>
+
+                        <!-- Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                            <div>
+                                <label for="phone"
+                                    class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Phone</label>
+                                <input type="text" name="phone" id="phone"
+                                    class="py-3 px-4 block w-full rounded-lg text-sm focus:border-blue-500  disabled:opacity-50 disabled:pointer-events-none bg-neutral-100 border-neutral-400 text-black placeholder-neutral-500 focus:ring-neutral-400">
+
+                            </div>
+
+                            <div>
+                                <label for="comfirm_phone"
+                                    class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Comfirm
+                                    Phone
+                                </label>
+                                <input type="text" name="comfirm_phone" id="comfirm_phone"
+                                    class="py-3 px-4 block w-full rounded-lg text-sm focus:border-blue-500  disabled:opacity-50 disabled:pointer-events-none bg-neutral-100 border-neutral-400 text-black placeholder-neutral-500 focus:ring-neutral-400">
+
+                            </div>
+                        </div>
+                        <!-- End Grid -->
+
+
+                        <!-- Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                            <div>
+                                <label for="date_of_service"
+                                    class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">
+                                    When Do You Need Our Service?
+                                </label>
+                                <input type="date" name="date_of_service" id="date_of_service"
+                                    class="py-3 px-4 block w-full rounded-lg text-sm focus:border-blue-500  disabled:opacity-50 disabled:pointer-events-none bg-neutral-100 border-neutral-400 text-black placeholder-neutral-500 focus:ring-neutral-400">
+
+                            </div>
+
+                            <div>
+                                <label for="time_of_service"
+                                    class="block mb-2 text-sm text-gray-700 font-medium dark:text-white invisible">Comfirm
+                                    Phone
+                                </label>
+                                <input type="time" name="time_of_service" id="time_of_service"
+                                    class="py-3 px-4 block w-full rounded-lg text-sm focus:border-blue-500  disabled:opacity-50 disabled:pointer-events-none bg-neutral-100 border-neutral-400 text-black placeholder-neutral-500 focus:ring-neutral-400">
+
+                            </div>
+                        </div>
+                        <!-- End Grid -->
+
+                        <div>
+                            <label for="additional_details"
+                                class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Additional
+                                Details</label>
+                            <textarea id="additional_details" name="additional_details" rows="4"
+                                placeholder="Anything else you'd like to tell us? Any questions or concerns?"
+                                class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"></textarea>
+                        </div>
+
+
+
+                        <div>
+                            <label for="compound"
+                                class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">One last
+                                Thing...</label>
+
+                            <select name="compound"
+                                class=" bg-neutral-100 mt-1 block w-full rounded-md border border-neutral-400 pl-3 py-3 px-4  pr-10 text-base focus:border-black focus:outline-none focus:ring-neutral-400 sm:text-sm">
+                                <option class="bg-gray-200">How did you find us?</option>
+                                <option value="Family and Friends">Family &amp; Friends</option>
+                                <option value="Google">Google</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Twitter">Twitter</option>
+                                <option value="TikTok">TikTok</option>
+                                <option value="YouTube">YouTube</option>
+                                <option value="Whatsapp">Whatsapp</option>
+                                <option value="Other">Other</option>
+
+
+
+
+                            </select>
+
+                            <div x-show="false">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- End Grid -->
+
+
+
+                    <!-- Checkbox -->
+                    <div class="mt-3 hidden">
+                        <div class="flex">
+                            <input id="remember-me" name="remember-me" type="checkbox"
+                                class="shrink-0 mt-1.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800">
+                        </div>
+                        <div class="ms-3">
+                            <label for="remember-me" class="text-sm text-gray-600 dark:text-neutral-400">By submitting
+                                this form I have read and acknowledged the <a
+                                    class="text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500"
+                                    href="#">Privact policy</a></label>
+                        </div>
+                    </div>
+                    <!-- End Checkbox -->
+
+                    <div class="mt-6 grid">
+                        <button type="submit"
+                            class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+                            Get Estimation
+                        </button>
+                    </div>
+
+                    <div class="mt-3 text-center">
+                        <p class="text-sm text-gray-500 dark:text-neutral-500">
+                            We'll get back to you in an instances.
+                        </p>
+                    </div>
+                </form>
+                <!-- End Form -->
+            </div>
+        </div>
+    </div>
+    <!-- End Hire Us -->
+
+
+    <footer class="bg-black">
+        <div class="max-w-[85rem] py-4 px-4 sm:px-6 lg:px-8 mx-auto">
+            <div class="pb-10">
+                <!-- Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6 mb-10">
+                    <div class="col-span-full lg:col-span-1">
+                        <img src="./images/ecoshielf-logo.jpg" class="size-20" />
+                    </div>
+                    <!-- End Col -->
+
+                    <div>
+                        <h4 class="font-semibold text-slate-300">Ecoshield</h4>
+
+                        <div class="mt-3 grid space-y-3 text-sm">
+                            <p><button type="button" class="hover:text-white text-slate-400">Contact
+                                    Us</button></p>
+                            <p><button type="button" class="hover:text-white text-slate-400">Hire
+                                    Us</button></p>
+                        </div>
+                    </div>
+                    <!-- End Col -->
+
+                    <div>
+                        <h4 class="font-semibold text-slate-300">Legal</h4>
+
+                        <div class="mt-3 grid space-y-3 text-sm">
+                            <p><a class="hover:text-white text-slate-400" href="./terms.html">Terms &amp;
+                                    Conditions</a></p>
+                            <p><a class="hover:text-white text-slate-400" href="./privacy.html">Privacy Policy</a></p>
+                            <p><a class="hover:text-white text-slate-400" href="./license.html">License</a></p>
+                        </div>
+                    </div>
+                    <!-- End Col -->
+
+                    <!-- <div>
+                        <h4 class="font-semibold text-slate-300">Resources</h4>
+
+                        <div class="mt-3 grid space-y-3 text-sm">
+                            <p><a class="hover:text-white text-slate-400" href="../pro/index.html">Preline Pro</a></p>
+                            <p><a class="hover:text-white text-slate-400" href="../examples.html">Examples</a></p>
+                            <p><a class="hover:text-white text-slate-400" href="../plugins.html">Plugins</a></p>
+                            <p><a class="hover:text-white text-slate-400" href="../figma.html">Figma</a></p>
+                            <p><a class="hover:text-white text-slate-400" href="../docs/resources.html">Resources</a>
+                            </p>
+                        </div>
+                    </div> -->
+                    <!-- End Col -->
+                </div>
+                <!-- End Grid -->
+
+                <p class="text-xs sm:text-sm text-slate-400">© 2024 Ecoshield.</p>
+            </div>
+
+            <div class="bg-[radial-gradient(closest-side,#7c3aed,#2563eb,transparent)] h-1"></div>
+        </div>
+    </footer>
+
+    <script src="./scripts/alpine.js"></script>
+    <svg style="display: none; visibility: hidden;">
+        <symbol id="phone-icon" viewBox="0 0 50 50">
+            <path
+                d="M39.03125 47C39.015625 47 39 47 38.984375 47C31.46875 46.753906 22.664063 39.46875 16.597656 33.398438C10.523438 27.328125 3.238281 18.519531 3.003906 11.039063C2.917969 8.414063 9.359375 3.746094 9.425781 3.699219C11.097656 2.535156 12.953125 2.949219 13.714844 4.003906C14.230469 4.71875 19.113281 12.117188 19.644531 12.957031C20.195313 13.828125 20.113281 15.125 19.425781 16.425781C19.046875 17.148438 17.789063 19.359375 17.199219 20.390625C17.835938 21.296875 19.519531 23.519531 22.996094 26.996094C26.476563 30.472656 28.695313 32.160156 29.605469 32.796875C30.636719 32.207031 32.847656 30.949219 33.570313 30.570313C34.851563 29.890625 36.140625 29.804688 37.019531 30.34375C37.917969 30.894531 45.296875 35.800781 45.976563 36.273438C46.546875 36.675781 46.914063 37.363281 46.988281 38.164063C47.058594 38.972656 46.808594 39.828125 46.289063 40.574219C46.246094 40.636719 41.632813 47 39.03125 47Z" />
+        </symbol>
+
+        <symbol id="email-icon" viewBox="0 0 50 50">
+            <path
+                d="M0 7L0 9.875L25 29.71875L50 10.125L50 7 Z M 0 12.40625L0 43L50 43L50 12.65625L25.625 31.78125C25.445313 31.921875 25.21875 32 25 32C24.78125 32 24.558594 31.925781 24.375 31.78125Z" />
+        </symbol>
+
+
+        <symbol id="location-icon" viewBox="0 0 50 50">
+            <path
+                d="M25 1C16.179688 1 9 8.179688 9 17C9 31.113281 23.628906 47.945313 24.25 48.65625C24.441406 48.875 24.710938 49 25 49C25.308594 48.980469 25.558594 48.875 25.75 48.65625C26.371094 47.933594 41 30.8125 41 17C41 8.179688 33.820313 1 25 1 Z M 25 12C28.3125 12 31 14.6875 31 18C31 21.3125 28.3125 24 25 24C21.6875 24 19 21.3125 19 18C19 14.6875 21.6875 12 25 12Z" />
+        </symbol>
+
+        <symbol id="circled-menu-icon" viewBox="0 0 50 50">
+            <path
+                d="M10 4C6.691 4 4 6.691 4 10C4 13.309 6.691 16 10 16C13.309 16 16 13.309 16 10C16 6.691 13.309 4 10 4 z M 25 4C21.691 4 19 6.691 19 10C19 13.309 21.691 16 25 16C28.309 16 31 13.309 31 10C31 6.691 28.309 4 25 4 z M 40 4C36.691 4 34 6.691 34 10C34 13.309 36.691 16 40 16C43.309 16 46 13.309 46 10C46 6.691 43.309 4 40 4 z M 10 19C6.691 19 4 21.691 4 25C4 28.309 6.691 31 10 31C13.309 31 16 28.309 16 25C16 21.691 13.309 19 10 19 z M 25 19C21.691 19 19 21.691 19 25C19 28.309 21.691 31 25 31C28.309 31 31 28.309 31 25C31 21.691 28.309 19 25 19 z M 40 19C36.691 19 34 21.691 34 25C34 28.309 36.691 31 40 31C43.309 31 46 28.309 46 25C46 21.691 43.309 19 40 19 z M 10 34C6.691 34 4 36.691 4 40C4 43.309 6.691 46 10 46C13.309 46 16 43.309 16 40C16 36.691 13.309 34 10 34 z M 25 34C21.691 34 19 36.691 19 40C19 43.309 21.691 46 25 46C28.309 46 31 43.309 31 40C31 36.691 28.309 34 25 34 z M 40 34C36.691 34 34 36.691 34 40C34 43.309 36.691 46 40 46C43.309 46 46 43.309 46 40C46 36.691 43.309 34 40 34 z" />
+        </symbol>
+
+
+        <symbol id="close-menu-icon" viewBox="0 0 50 50">
+            <path
+                d="M9.15625 6.3125L6.3125 9.15625L22.15625 25L6.21875 40.96875L9.03125 43.78125L25 27.84375L40.9375 43.78125L43.78125 40.9375L27.84375 25L43.6875 9.15625L40.84375 6.3125L25 22.15625Z" />
+        </symbol>
+
+        <symbol id="whatsapp-icon" viewBox="0 0 50 50">
+            <path
+                d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z" />
+        </symbol>
+
+        <symbol id="twitter-icon" viewBox="0 0 50 50">
+            <path
+                d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M36.237,20.524 c0.01,0.236,0.016,0.476,0.016,0.717C36.253,28.559,30.68,37,20.491,37c-3.128,0-6.041-0.917-8.491-2.489 c0.433,0.052,0.872,0.077,1.321,0.077c2.596,0,4.985-0.884,6.879-2.37c-2.424-0.044-4.468-1.649-5.175-3.847 c0.339,0.065,0.686,0.1,1.044,0.1c0.505,0,0.995-0.067,1.458-0.195c-2.532-0.511-4.441-2.747-4.441-5.432c0-0.024,0-0.047,0-0.07 c0.747,0.415,1.6,0.665,2.509,0.694c-1.488-0.995-2.464-2.689-2.464-4.611c0-1.015,0.272-1.966,0.749-2.786 c2.733,3.351,6.815,5.556,11.418,5.788c-0.095-0.406-0.145-0.828-0.145-1.262c0-3.059,2.48-5.539,5.54-5.539 c1.593,0,3.032,0.672,4.042,1.749c1.261-0.248,2.448-0.709,3.518-1.343c-0.413,1.292-1.292,2.378-2.437,3.064 c1.122-0.136,2.188-0.432,3.183-0.873C38.257,18.766,37.318,19.743,36.237,20.524z" />
+        </symbol>
+
+        <symbol id="instagram-icon" viewBox="0 0 48 48">
+            <path
+                d="M13.5 6C9.3754991 6 6 9.3754991 6 13.5L6 34.5C6 38.624501 9.3754991 42 13.5 42L34.5 42C38.624501 42 42 38.624501 42 34.5L42 13.5C42 9.3754991 38.624501 6 34.5 6L13.5 6 z M 31.5 12L34.5 12C35.33 12 36 12.67 36 13.5C36 14.33 35.33 15 34.5 15L31.5 15C30.67 15 30 14.33 30 13.5C30 12.67 30.67 12 31.5 12 z M 24 18C27.331479 18 30 20.668523 30 24C30 27.331477 27.331479 30 24 30C20.668521 30 18 27.331477 18 24C18 20.668523 20.668521 18 24 18 z M 9 20L15.953125 20C15.348605 21.207689 15 22.56318 15 24C15 28.952794 19.047202 33 24 33C28.952798 33 33 28.952794 33 24C33 22.56318 32.651395 21.207689 32.046875 20L39 20L39 34.5C39 37.003499 37.003499 39 34.5 39L13.5 39C10.996501 39 9 37.003499 9 34.5L9 20 z" />
+        </symbol>
+
+
+    </svg>
+</body>
+
+</html>

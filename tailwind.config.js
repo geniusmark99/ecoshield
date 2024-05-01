@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode:'class',
-  content: ["./styles/**/*.{html,js}","./pages/**/*"],
+  content: ["./styles/**/*.{html,js}","./*"],
   theme: {
     extend: {
       colors:[
@@ -11,5 +11,7 @@ module.exports = {
       ]
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }
