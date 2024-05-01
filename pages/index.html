@@ -1,0 +1,450 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/output.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <header class="flex flex-col border-none lg:border-b lg:border-slate-800" x-data="{open:false}">
+        <div class="hidden md:flex bg-white py-2 px-20 justify-between">
+            <ul class="flex justify-between gap-x-10">
+                <li class="flex gap-x-2 items-center">
+                    <div class="size-4">
+                        <svg class="size-4 fill-black">
+                            <use href="#phone-icon"></use>
+                        </svg>
+                    </div>
+
+                    <p class="text-slate-900">
+                        +2348123916766
+                    </p>
+
+                </li>
+
+                <li class="flex gap-x-2 items-center">
+                    <div class="size-4">
+                        <svg class="size-4 fill-black">
+                            <use href="#email-icon"></use>
+                        </svg>
+                    </div>
+
+                    <p class="text-slate-900">
+                        hello@ecoshield.ng
+                    </p>
+
+                </li>
+
+                <li class="flex gap-x-2 items-center">
+                    <div class="size-4">
+                        <svg class="size-4 fill-black">
+                            <use href="#location-icon"></use>
+                        </svg>
+                    </div>
+
+                    <p class="text-slate-900">
+                        99 Roving St., Big City, PKU 23456
+                    </p>
+
+                </li>
+            </ul>
+            <div class="flex justify-between gap-x-5">
+
+                <a href="https://api.whatsapp.com/send?phone=2348123916766"
+                    class="bg-black hover:scale-95 transition-all hover:shadow-lg inline-flex justify-center items-center size-10 rounded-full">
+                    <svg class="size-5 fill-white">
+                        <use href="#whatsapp-icon"></use>
+                    </svg>
+                </a>
+
+                <a href="tel:08123916766"
+                    class="bg-black hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
+                    <svg class="size-5 fill-white">
+                        <use href="#phone-icon"></use>
+                    </svg>
+                </a>
+
+                <a href="https://www.instagram.com/ecoshield_fumigation/"
+                    class="bg-black hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
+                    <svg class="size-5 fill-white">
+                        <use href="#instagram-icon"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class=" w-full py-1 bg-black    border-b border-transparent" :class="{'border-slate-400':open}">
+            <nav class="flex justify-between items-center mx-5 lg:mx-24">
+                <div class="">
+                    <img src="../images/ecoshielf-logo.jpg" class="size-14 rounded-full" />
+                </div>
+                <ul class="desktop-list">
+                    <a
+                        class="list-btn bg-white hover:bg-black shadow-sm shadow-transparent cursor-pointer block hover:shadow-teal-500 text-black hover:text-white transition-all px-3 py-2 rounded-md">
+                        Request Estimate
+                    </a>
+
+                </ul>
+
+                <div class="flex justify-between gap-x-2 lg:hidden">
+
+                    <a href="https://api.whatsapp.com/send?phone=2348123916766"
+                        class="bg-white hover:scale-95 transition-all hover:shadow-lg inline-flex justify-center items-center size-10 rounded-full">
+                        <svg class="size-5 fill-black">
+                            <use href="#whatsapp-icon"></use>
+                        </svg>
+                    </a>
+
+                    <a href="tel:08123916766"
+                        class="bg-white hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
+                        <svg class="size-5 fill-black">
+                            <use href="#phone-icon"></use>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.instagram.com/ecoshield_fumigation/"
+                        class="bg-white hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
+                        <svg class="size-5 fill-black">
+                            <use href="#instagram-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+
+            </nav>
+
+
+        </div>
+
+        </div>
+
+
+    </header>
+
+    <!--------  HERO SECTION ------->
+
+    <!-- Hero -->
+    <div class=" relative pt-20 lg:pt-2">
+        <!-- Hero -->
+        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <!-- Grid -->
+            <div class="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
+                <div class="lg:col-span-3">
+                    <h1 class="block text-center lg:text-left text-3xl font-bold sm:text-4xl md:text-5xl lg:text-5xl">
+                        <span
+                            class="bg-gradient-to-t from-teal-600 to-green-600 font-sans text-transparent bg-clip-text">Ecoshield</span>
+                        got you covered safeguarding your Home and Health
+                    </h1>
+
+                    <p class="mt-3 lg:mt-5 text-lg text-slate-900 text-center lg:text-left">
+                        Transforming Homes, Schools, and Businesses: Creating Pest-Free Havens for Everyone!
+                    </p>
+
+
+                    <div class="mt-5 lg:mt-8 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 lg:text-left">
+
+
+                        <a class="w-full sm:w-auto py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-black text-white hover:bg-white hover:text-black hover:shadow-md hover:scale-95 transition-all hover:shadow-black/10 disabled:opacity-50 disabled:pointer-events-none"
+                            href="./request-estimate.html">
+                            Request Estimates
+                        </a>
+                    </div>
+
+
+                </div>
+                <!-- End Col -->
+
+                <div class="lg:col-span-4 mt-10 lg:mt-0 lg:w-[550px]">
+                    <img class="w-full rounded-xl" src="../images/Hero-Image-3.png" alt="Image Description">
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Grid -->
+        </div>
+
+    </div>
+
+    <!-- Card Grid -->
+    <div
+        class="grid  mx-10 grid-cols-1 lg:grid-cols-3 items-center border border-neutral-700 divide-y lg:divide-y-0 lg:divide-x divide-neutral-700 rounded-xl">
+        <!-- Card -->
+        <div
+            class="group relative z-10 p-4 md:p-6 h-full flex flex-col bg-black first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-[#ff0]/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100">
+            <div class="mb-5">
+
+
+                <svg class="flex-shrink-0 size-8 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <path
+                        d="M24.820312 3.0195312C15.086458 2.5613261 7 10.356853 7 20L7 25.5L7 31.5C7 34.371441 9.2128679 36.732123 12.023438 36.974609C12.271649 40.879188 15.535691 44 19.5 44L20.513672 44C20.97061 44.603155 21.687014 45 22.5 45L25.5 45C26.878 45 28 43.879 28 42.5C28 41.121 26.878 40 25.5 40L22.5 40C21.687014 40 20.97061 40.396845 20.513672 41L19.5 41C17.168033 41 15.297157 39.260738 15.048828 37L16.5 37C17.329 37 18 36.328 18 35.5L18 25.5C18 24.672 17.329 24 16.5 24L10 24L10 20C10 12.025147 16.609589 5.6358303 24.677734 6.015625C32.192177 6.3689489 38 12.860012 38 20.4375L38 24L31.5 24C30.671 24 30 24.672 30 25.5L30 35.5C30 36.328 30.671 37 31.5 37L35.5 37C38.533 37 41 34.532 41 31.5L41 24L41 20.4375C41 11.322988 33.97987 3.4502074 24.820312 3.0195312 z" />
+                </svg>
+
+                <div class="mt-5">
+                    <h3 class="mt-5 font-medium text-lg text-white">Contact us</h3>
+                    <p class="mt-1 text-white">
+                        "Ready to take the first step towards a pest-free paradise?
+                        We're here to help! Reach out to our dedicated team at
+                        <a class="font-bold text-base text-neutral-400 hover:underline"
+                            href="https://api.whatsapp.com/send?phone=2348123916766">whatsapp</a>
+                        and
+                        let's tackle those pests together. Whether you have a question, need a quote,
+                        or are ready to schedule your fumigation service, we're just a message or call away.
+                        Don't wait, contact us now and reclaim your space!
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <div
+            class="group relative z-10 p-4 md:p-6 h-full flex flex-col bg-black first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-[#ff0]/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100">
+            <div class="mb-5">
+
+                <svg class="flex-shrink-0 size-8 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <path
+                        d="M11.5 0C5.1664891 0 0 5.1664939 0 11.5C0 17.833506 5.1664891 23 11.5 23C17.833511 23 23 17.833506 23 11.5C23 5.1664939 17.833511 0 11.5 0 z M 11.5 3C16.212192 3 20 6.7878114 20 11.5C20 16.212189 16.212192 20 11.5 20C6.7878084 20 3 16.212189 3 11.5C3 6.7878114 6.7878084 3 11.5 3 z M 11.476562 4.9785156 A 1.50015 1.50015 0 0 0 10 6.5L10 11.5 A 1.50015 1.50015 0 0 0 10.439453 12.560547L12.439453 14.560547 A 1.50015 1.50015 0 1 0 14.560547 12.439453L13 10.878906L13 6.5 A 1.50015 1.50015 0 0 0 11.476562 4.9785156 z M 23.820312 6C24.572312 7.681 25 9.539 25 11.5C25 12.355 24.911766 13.189 24.759766 14L42 14L42 12.5C42 8.916 39.084 6 35.5 6L23.820312 6 z M 23.820312 17C21.713313 21.712 16.995 25 11.5 25C9.539 25 7.681 24.572312 6 23.820312L6 35.5C6 39.084 8.916 42 12.5 42L35.5 42C39.084 42 42 39.084 42 35.5L42 17L23.820312 17 z M 24 22C25.381 22 26.5 23.119 26.5 24.5C26.5 25.881 25.381 27 24 27C22.619 27 21.5 25.881 21.5 24.5C21.5 23.119 22.619 22 24 22 z M 32.5 22C33.881 22 35 23.119 35 24.5C35 25.881 33.881 27 32.5 27C31.119 27 30 25.881 30 24.5C30 23.119 31.119 22 32.5 22 z M 15.5 31C16.881 31 18 32.119 18 33.5C18 34.881 16.881 36 15.5 36C14.119 36 13 34.881 13 33.5C13 32.119 14.119 31 15.5 31 z M 24 31C25.381 31 26.5 32.119 26.5 33.5C26.5 34.881 25.381 36 24 36C22.619 36 21.5 34.881 21.5 33.5C21.5 32.119 22.619 31 24 31 z" />
+                </svg>
+
+                <div class="mt-5">
+                    <h3 class="mt-5 font-medium text-lg text-white">Schedule Appointment</h3>
+                    <p class="mt-1 text-white">
+                        "Ready to schedule your pest-free transformation? It's as easy as one, two,
+                        squeak-free! Simply click, call, or email to book your appointment with [Company Name] today.
+                        Our expert team will swiftly arrange a time that suits you, ensuring a hassle-free experience
+                        from start to finish.
+                        Don't let pests dictate your schedule – take control and schedule us now!"
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <div
+            class="group relative z-10 p-4 md:p-6 h-full flex flex-col bg-black first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-[#ff0]/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100">
+            <div class="mb-5">
+
+
+                <svg class="flex-shrink-0 size-8 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <path
+                        d="M13.5 4C10.468 4 8 6.467 8 9.5L8 38.5C8 41.533 10.468 44 13.5 44L25.640625 44C23.391625 41.662 22 38.493 22 35C22 33.159 22.389031 31.408313 23.082031 29.820312C22.156031 29.454313 21.5 28.556 21.5 27.5C21.5 26.119 22.619 25 24 25C24.722 25 25.368219 25.310781 25.824219 25.800781C28.177219 23.453781 31.422 22 35 22C36.771 22 38.46 22.359906 40 23.003906L40 9.5C40 6.467 37.532 4 34.5 4L13.5 4 z M 16.460938 11L31.539062 11C32.896062 11 34 12.104937 34 13.460938L34 18.539062C34 19.896062 32.896062 21 31.539062 21L16.460938 21C15.103938 21.001 14 19.895063 14 18.539062L14 13.460938C14 12.103938 15.103938 11 16.460938 11 z M 35 24C28.925 24 24 28.925 24 35C24 41.075 28.925 46 35 46C41.075 46 46 41.075 46 35C46 28.925 41.075 24 35 24 z M 16.5 25C17.881 25 19 26.119 19 27.5C19 28.881 17.881 30 16.5 30C15.119 30 14 28.881 14 27.5C14 26.119 15.119 25 16.5 25 z M 35 27C35.553 27 36 27.448 36 28L36 29.015625C37.544 29.093625 38.528844 29.975031 38.839844 30.457031C39.139844 30.921031 39.006969 31.540844 38.542969 31.839844C38.077969 32.136844 37.458156 32.006969 37.160156 31.542969C37.157156 31.542969 36.726109 31 35.787109 31L34.25 31C33.423 31 32.75 31.673 32.75 32.5C32.75 33.327 33.423 34 34.25 34L36 34C37.93 34 39.5 35.57 39.5 37.5C39.5 39.43 37.93 41 36 41L36 42C36 42.552 35.553 43 35 43C34.447 43 34 42.552 34 42L34 40.996094C32.756 40.987094 31.617969 40.532031 30.792969 39.707031C30.401969 39.316031 30.401969 38.685922 30.792969 38.294922C31.183969 37.903922 31.816031 37.903922 32.207031 38.294922C32.529031 38.615922 33.108109 39 34.037109 39L36 39C36.827 39 37.5 38.327 37.5 37.5C37.5 36.673 36.827 36 36 36L34.25 36C32.32 36 30.75 34.43 30.75 32.5C30.75 30.656 32.189 29.156391 34 29.025391L34 28C34 27.448 34.447 27 35 27 z M 16.5 32C17.881 32 19 33.119 19 34.5C19 35.881 17.881 37 16.5 37C15.119 37 14 35.881 14 34.5C14 33.119 15.119 32 16.5 32 z" />
+                </svg>
+                <div class="mt-5">
+                    <h3 class="mt-5 font-medium text-lg text-white">Get Estimate</h3>
+                    <p class="mt-1 text-white">
+                        "Curious about the cost of reclaiming your space from pests? Wonder no more! Get a personalized
+                        estimate from us today.
+                        Our team of experts will assess your needs and provide you with a transparent, competitive quote
+                        that fits your budget.
+                        Say goodbye to guesswork and hello to clarity – get your estimate now and let's make your pest
+                        problems a thing of the past!"
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Card -->
+    </div>
+    <!-- End Card Grid -->
+
+    <!-- Hero -->
+    <div class="relative overflow-hidden">
+        <!-- Gradients -->
+        <!-- <div aria-hidden="true" class="flex absolute -top-96 start-1/2 transform -translate-x-1/2">
+            <div class="bg-white blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem]">
+            </div>
+            <div
+                class="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70">
+            </div>
+        </div> -->
+        <!-- End Gradients -->
+
+        <div class="relative z-10">
+            <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+                <div class="max-w-2xl text-center mx-auto justify-center">
+                    <p class="text-xl lg:text-2xl font-medium flex items-center justify-center gap-x-4">
+                        Ecoshield
+                        <svg class="size-10" width="56" height="59" viewBox="0 0 56 59" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M51.0601 9.22997C43.0898 8.40073 36.0902 4.04022 32.6286 1.51523C29.8608 -0.505077 26.1378 -0.505077 23.37 1.51523C19.9068 4.04022 12.9088 8.40073 4.93842 9.22997C2.0493 9.52968 -0.11793 12.0221 0.00497795 14.9011C1.27762 44.6218 19.969 55.7638 25.6679 58.472C26.4085 58.8245 27.205 59 28.0001 59C28.7951 59 29.5916 58.823 30.3322 58.472C36.0311 55.7638 54.7225 44.6218 55.9951 14.9011C56.1165 12.0221 53.9493 9.52968 51.0601 9.22997Z"
+                                fill="#000106" />
+                            <path
+                                d="M37.2083 12C36.9984 12 36.797 12.0819 36.6485 12.2278C36.5001 12.3737 36.4167 12.5715 36.4167 12.7778C36.4167 12.9841 36.5001 13.1819 36.6485 13.3277C36.797 13.4736 36.9984 13.5556 37.2083 13.5556C37.4183 13.5556 37.6197 13.4736 37.7681 13.3277C37.9166 13.1819 38 12.9841 38 12.7778C38 12.5715 37.9166 12.3737 37.7681 12.2278C37.6197 12.0819 37.4183 12 37.2083 12ZM25.3333 13.5556C24.4585 13.5556 23.75 14.2517 23.75 15.1111V16.6667C23.75 17.5261 24.4585 18.2222 25.3333 18.2222H25.7292V19.872C22.461 20.356 19.8075 22.7922 19.1299 26H34.7096C34.0316 22.7901 31.3752 20.3522 28.1042 19.8704V18.2222H28.5C29.3748 18.2222 30.0833 17.5261 30.0833 16.6667V15.1111C30.0833 14.2517 29.3748 13.5556 28.5 13.5556H25.3333ZM34.8333 13.5556C34.6234 13.5556 34.422 13.6375 34.2735 13.7834C34.1251 13.9292 34.0417 14.1271 34.0417 14.3333C34.0417 14.5396 34.1251 14.7374 34.2735 14.8833C34.422 15.0292 34.6234 15.1111 34.8333 15.1111C35.0433 15.1111 35.2447 15.0292 35.3931 14.8833C35.5416 14.7374 35.625 14.5396 35.625 14.3333C35.625 14.1271 35.5416 13.9292 35.3931 13.7834C35.2447 13.6375 35.0433 13.5556 34.8333 13.5556ZM32.4583 15.1111C32.2484 15.1111 32.047 15.1931 31.8985 15.3389C31.7501 15.4848 31.6667 15.6826 31.6667 15.8889C31.6667 16.0952 31.7501 16.293 31.8985 16.4389C32.047 16.5847 32.2484 16.6667 32.4583 16.6667C32.6683 16.6667 32.8697 16.5847 33.0181 16.4389C33.1666 16.293 33.25 16.0952 33.25 15.8889C33.25 15.6826 33.1666 15.4848 33.0181 15.3389C32.8697 15.1931 32.6683 15.1111 32.4583 15.1111ZM37.2083 15.1111C36.9984 15.1111 36.797 15.1931 36.6485 15.3389C36.5001 15.4848 36.4167 15.6826 36.4167 15.8889C36.4167 16.0952 36.5001 16.293 36.6485 16.4389C36.797 16.5847 36.9984 16.6667 37.2083 16.6667C37.4183 16.6667 37.6197 16.5847 37.7681 16.4389C37.9166 16.293 38 16.0952 38 15.8889C38 15.6826 37.9166 15.4848 37.7681 15.3389C37.6197 15.1931 37.4183 15.1111 37.2083 15.1111ZM34.8333 16.6667C34.6234 16.6667 34.422 16.7486 34.2735 16.8945C34.1251 17.0403 34.0417 17.2382 34.0417 17.4444C34.0417 17.6507 34.1251 17.8486 34.2735 17.9944C34.422 18.1403 34.6234 18.2222 34.8333 18.2222C35.0433 18.2222 35.2447 18.1403 35.3931 17.9944C35.5416 17.8486 35.625 17.6507 35.625 17.4444C35.625 17.2382 35.5416 17.0403 35.3931 16.8945C35.2447 16.7486 35.0433 16.6667 34.8333 16.6667ZM37.2083 18.2222C36.9984 18.2222 36.797 18.3042 36.6485 18.45C36.5001 18.5959 36.4167 18.7937 36.4167 19C36.4167 19.2063 36.5001 19.4041 36.6485 19.55C36.797 19.6958 36.9984 19.7778 37.2083 19.7778C37.4183 19.7778 37.6197 19.6958 37.7681 19.55C37.9166 19.4041 38 19.2063 38 19C38 18.7937 37.9166 18.5959 37.7681 18.45C37.6197 18.3042 37.4183 18.2222 37.2083 18.2222ZM19 27.5556V43.8889C19 45.607 20.4179 47 22.1667 47H31.6667C33.4155 47 34.8333 45.607 34.8333 43.8889V27.5556H19ZM26.9167 33C28.6655 33 30.0833 34.393 30.0833 36.1111C30.0833 37.8292 28.6655 39.2222 26.9167 39.2222C25.1679 39.2222 23.75 37.8292 23.75 36.1111C23.75 34.393 25.1679 33 26.9167 33Z"
+                                fill="white" />
+                        </svg>
+
+                    </p>
+
+                    <!-- Title -->
+                    <div class="mt-5 max-w-2xl">
+                        <h1 class="block font-bold text-black text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
+                            Premium Pest Control
+                        </h1>
+                    </div>
+                    <!-- End Title -->
+
+                    <div class="mt-5 max-w-3xl">
+                        <p class="text-lg text-gray-700">
+                            Clear the air, clear the worries! Introducing Ecoshield,
+                            your ultimate solution for a pest-free environment.
+                            Say goodbye to unwanted guests and hello to fresh, clean spaces.
+                            With our expert fumigation services, we guarantee a breath of relief.
+                            Trust us to safeguard your home or business, ensuring peace of mind every step of the way.
+                            Embrace a pest-free future with Ecoshield today!"
+
+                        </p>
+                    </div>
+
+                    <!-- Buttons -->
+                    <!-- <div class="mt-8 gap-3 flex justify-center">
+<a class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+    href="#">
+    Get started
+    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="m9 18 6-6-6-6" />
+    </svg>
+</a>
+<a class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-800"
+    href="#">
+    <svg class="flex-shrink-0 size-4" width="19" height="18" viewBox="0 0 19 18" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M6.875 18C8.531 18 9.875 16.656 9.875 15V12H6.875C5.219 12 3.875 13.344 3.875 15C3.875 16.656 5.219 18 6.875 18Z"
+            fill="#0ACF83"></path>
+        <path
+            d="M3.875 9C3.875 7.344 5.219 6 6.875 6H9.875V12H6.875C5.219 12 3.875 10.656 3.875 9Z"
+            fill="#A259FF"></path>
+        <path
+            d="M3.875 3C3.875 1.344 5.219 0 6.875 0H9.875V6H6.875C5.219 6 3.875 4.656 3.875 3Z"
+            fill="#F24E1E"></path>
+        <path
+            d="M9.87501 0H12.875C14.531 0 15.875 1.344 15.875 3C15.875 4.656 14.531 6 12.875 6H9.87501V0Z"
+            fill="#FF7262"></path>
+        <path
+            d="M15.875 9C15.875 10.656 14.531 12 12.875 12C11.219 12 9.87501 10.656 9.87501 9C9.87501 7.344 11.219 6 12.875 6C14.531 6 15.875 7.344 15.875 9Z"
+            fill="#1ABCFE"></path>
+    </svg>
+    Preline Figma
+</a>
+</div> -->
+                    <!-- End Buttons -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Hero -->
+    <!-------- END OF HERO SECTION ------->
+
+    <footer class="bg-black">
+        <div class="max-w-[85rem] py-4 px-4 sm:px-6 lg:px-8 mx-auto">
+            <div class="pb-10">
+                <!-- Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6 mb-10">
+                    <div class="col-span-full lg:col-span-1">
+                        <img src="../images/ecoshielf-logo.jpg" class="size-20" />
+                    </div>
+                    <!-- End Col -->
+
+                    <div>
+                        <h4 class="font-semibold text-slate-300">Ecoshield</h4>
+
+                        <div class="mt-3 grid space-y-3 text-sm">
+                            <p><button type="button" class="hover:text-white text-slate-400">Contact
+                                    Us</button></p>
+                            <p><button type="button" class="hover:text-white text-slate-400">Hire
+                                    Us</button></p>
+                        </div>
+                    </div>
+                    <!-- End Col -->
+
+                    <div>
+                        <h4 class="font-semibold text-slate-300">Legal</h4>
+
+                        <div class="mt-3 grid space-y-3 text-sm">
+                            <p><a class="hover:text-white text-slate-400" href="./terms.html">Terms &amp;
+                                    Conditions</a></p>
+                            <p><a class="hover:text-white text-slate-400" href="./privacy.html">Privacy Policy</a></p>
+                            <p><a class="hover:text-white text-slate-400" href="./license.html">License</a></p>
+                        </div>
+                    </div>
+                    <!-- End Col -->
+
+                    <!-- <div>
+                        <h4 class="font-semibold text-slate-300">Resources</h4>
+
+                        <div class="mt-3 grid space-y-3 text-sm">
+                            <p><a class="hover:text-white text-slate-400" href="../pro/index.html">Preline Pro</a></p>
+                            <p><a class="hover:text-white text-slate-400" href="../examples.html">Examples</a></p>
+                            <p><a class="hover:text-white text-slate-400" href="../plugins.html">Plugins</a></p>
+                            <p><a class="hover:text-white text-slate-400" href="../figma.html">Figma</a></p>
+                            <p><a class="hover:text-white text-slate-400" href="../docs/resources.html">Resources</a>
+                            </p>
+                        </div>
+                    </div> -->
+                    <!-- End Col -->
+                </div>
+                <!-- End Grid -->
+
+                <p class="text-xs sm:text-sm text-slate-400">© 2024 Ecoshield.</p>
+            </div>
+
+            <div class="bg-[radial-gradient(closest-side,#7c3aed,#2563eb,transparent)] h-1"></div>
+        </div>
+    </footer>
+
+    <script src="../scripts/alpine.js"></script>
+    <svg style="display: none; visibility: hidden;">
+        <symbol id="phone-icon" viewBox="0 0 50 50">
+            <path
+                d="M39.03125 47C39.015625 47 39 47 38.984375 47C31.46875 46.753906 22.664063 39.46875 16.597656 33.398438C10.523438 27.328125 3.238281 18.519531 3.003906 11.039063C2.917969 8.414063 9.359375 3.746094 9.425781 3.699219C11.097656 2.535156 12.953125 2.949219 13.714844 4.003906C14.230469 4.71875 19.113281 12.117188 19.644531 12.957031C20.195313 13.828125 20.113281 15.125 19.425781 16.425781C19.046875 17.148438 17.789063 19.359375 17.199219 20.390625C17.835938 21.296875 19.519531 23.519531 22.996094 26.996094C26.476563 30.472656 28.695313 32.160156 29.605469 32.796875C30.636719 32.207031 32.847656 30.949219 33.570313 30.570313C34.851563 29.890625 36.140625 29.804688 37.019531 30.34375C37.917969 30.894531 45.296875 35.800781 45.976563 36.273438C46.546875 36.675781 46.914063 37.363281 46.988281 38.164063C47.058594 38.972656 46.808594 39.828125 46.289063 40.574219C46.246094 40.636719 41.632813 47 39.03125 47Z" />
+        </symbol>
+
+        <symbol id="email-icon" viewBox="0 0 50 50">
+            <path
+                d="M0 7L0 9.875L25 29.71875L50 10.125L50 7 Z M 0 12.40625L0 43L50 43L50 12.65625L25.625 31.78125C25.445313 31.921875 25.21875 32 25 32C24.78125 32 24.558594 31.925781 24.375 31.78125Z" />
+        </symbol>
+
+
+        <symbol id="location-icon" viewBox="0 0 50 50">
+            <path
+                d="M25 1C16.179688 1 9 8.179688 9 17C9 31.113281 23.628906 47.945313 24.25 48.65625C24.441406 48.875 24.710938 49 25 49C25.308594 48.980469 25.558594 48.875 25.75 48.65625C26.371094 47.933594 41 30.8125 41 17C41 8.179688 33.820313 1 25 1 Z M 25 12C28.3125 12 31 14.6875 31 18C31 21.3125 28.3125 24 25 24C21.6875 24 19 21.3125 19 18C19 14.6875 21.6875 12 25 12Z" />
+        </symbol>
+
+        <symbol id="circled-menu-icon" viewBox="0 0 50 50">
+            <path
+                d="M10 4C6.691 4 4 6.691 4 10C4 13.309 6.691 16 10 16C13.309 16 16 13.309 16 10C16 6.691 13.309 4 10 4 z M 25 4C21.691 4 19 6.691 19 10C19 13.309 21.691 16 25 16C28.309 16 31 13.309 31 10C31 6.691 28.309 4 25 4 z M 40 4C36.691 4 34 6.691 34 10C34 13.309 36.691 16 40 16C43.309 16 46 13.309 46 10C46 6.691 43.309 4 40 4 z M 10 19C6.691 19 4 21.691 4 25C4 28.309 6.691 31 10 31C13.309 31 16 28.309 16 25C16 21.691 13.309 19 10 19 z M 25 19C21.691 19 19 21.691 19 25C19 28.309 21.691 31 25 31C28.309 31 31 28.309 31 25C31 21.691 28.309 19 25 19 z M 40 19C36.691 19 34 21.691 34 25C34 28.309 36.691 31 40 31C43.309 31 46 28.309 46 25C46 21.691 43.309 19 40 19 z M 10 34C6.691 34 4 36.691 4 40C4 43.309 6.691 46 10 46C13.309 46 16 43.309 16 40C16 36.691 13.309 34 10 34 z M 25 34C21.691 34 19 36.691 19 40C19 43.309 21.691 46 25 46C28.309 46 31 43.309 31 40C31 36.691 28.309 34 25 34 z M 40 34C36.691 34 34 36.691 34 40C34 43.309 36.691 46 40 46C43.309 46 46 43.309 46 40C46 36.691 43.309 34 40 34 z" />
+        </symbol>
+
+
+        <symbol id="close-menu-icon" viewBox="0 0 50 50">
+            <path
+                d="M9.15625 6.3125L6.3125 9.15625L22.15625 25L6.21875 40.96875L9.03125 43.78125L25 27.84375L40.9375 43.78125L43.78125 40.9375L27.84375 25L43.6875 9.15625L40.84375 6.3125L25 22.15625Z" />
+        </symbol>
+
+        <symbol id="whatsapp-icon" viewBox="0 0 50 50">
+            <path
+                d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z" />
+        </symbol>
+
+        <symbol id="twitter-icon" viewBox="0 0 50 50">
+            <path
+                d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M36.237,20.524 c0.01,0.236,0.016,0.476,0.016,0.717C36.253,28.559,30.68,37,20.491,37c-3.128,0-6.041-0.917-8.491-2.489 c0.433,0.052,0.872,0.077,1.321,0.077c2.596,0,4.985-0.884,6.879-2.37c-2.424-0.044-4.468-1.649-5.175-3.847 c0.339,0.065,0.686,0.1,1.044,0.1c0.505,0,0.995-0.067,1.458-0.195c-2.532-0.511-4.441-2.747-4.441-5.432c0-0.024,0-0.047,0-0.07 c0.747,0.415,1.6,0.665,2.509,0.694c-1.488-0.995-2.464-2.689-2.464-4.611c0-1.015,0.272-1.966,0.749-2.786 c2.733,3.351,6.815,5.556,11.418,5.788c-0.095-0.406-0.145-0.828-0.145-1.262c0-3.059,2.48-5.539,5.54-5.539 c1.593,0,3.032,0.672,4.042,1.749c1.261-0.248,2.448-0.709,3.518-1.343c-0.413,1.292-1.292,2.378-2.437,3.064 c1.122-0.136,2.188-0.432,3.183-0.873C38.257,18.766,37.318,19.743,36.237,20.524z" />
+        </symbol>
+
+        <symbol id="instagram-icon" viewBox="0 0 48 48">
+            <path
+                d="M13.5 6C9.3754991 6 6 9.3754991 6 13.5L6 34.5C6 38.624501 9.3754991 42 13.5 42L34.5 42C38.624501 42 42 38.624501 42 34.5L42 13.5C42 9.3754991 38.624501 6 34.5 6L13.5 6 z M 31.5 12L34.5 12C35.33 12 36 12.67 36 13.5C36 14.33 35.33 15 34.5 15L31.5 15C30.67 15 30 14.33 30 13.5C30 12.67 30.67 12 31.5 12 z M 24 18C27.331479 18 30 20.668523 30 24C30 27.331477 27.331479 30 24 30C20.668521 30 18 27.331477 18 24C18 20.668523 20.668521 18 24 18 z M 9 20L15.953125 20C15.348605 21.207689 15 22.56318 15 24C15 28.952794 19.047202 33 24 33C28.952798 33 33 28.952794 33 24C33 22.56318 32.651395 21.207689 32.046875 20L39 20L39 34.5C39 37.003499 37.003499 39 34.5 39L13.5 39C10.996501 39 9 37.003499 9 34.5L9 20 z" />
+        </symbol>
+
+
+    </svg>
+</body>
+
+</html>

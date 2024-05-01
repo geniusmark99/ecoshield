@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .desktop-list {
+        @apply text-white relative lg:flex gap-x-14 hidden
+    }
+
+    .desktop-list-li {
+        @apply relative
+    }
+
+    .desktop-list-li::after {
+        @apply absolute content-[''] h-0.5 w-0 will-change-[width] bg-white bottom-0 left-0 transition-all
+    }
+
+    .desktop-list-li.active,
+    .desktop-list-li:hover::after {
+    @apply w-full
+    }
+
+}
