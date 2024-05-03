@@ -1,0 +1,32 @@
+swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* object-fit: contain; */
+  }
+
+  .swiper-pagination-bullet {
+    background: black;
+    /* Change bullet background color */
+}
+
+.swiper-pagination-bullet-active {
+    background: black !important;
+    /* Change bullet background color */
+}

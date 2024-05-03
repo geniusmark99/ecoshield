@@ -20,4 +20,8 @@
     @apply w-full
     }
 
+    .border-red {
+        @apply border-red-500
+    }
+
 }

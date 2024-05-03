@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000" />
     <link href="./styles/output.css" rel="stylesheet">
+    <link href="./styles/swiper.css" rel="stylesheet">
+
 </head>
 
 <body class="">
@@ -46,7 +48,7 @@
                     </div>
 
                     <p class="text-slate-900">
-                        99 Roving St., Big City, PKU 23456
+                        Victoria Island, Lagos State, Nigeria
                     </p>
 
                 </li>
@@ -54,22 +56,22 @@
             <div class="flex justify-between gap-x-5">
 
                 <a href="https://api.whatsapp.com/send?phone=2348123916766"
-                    class="bg-black hover:scale-95 transition-all hover:shadow-lg inline-flex justify-center items-center size-10 rounded-full">
-                    <svg class="size-5 fill-white">
+                    class="bg-green-500/20 hover:scale-95 transition-all hover:shadow-lg inline-flex justify-center items-center size-10 rounded-full">
+                    <svg class="size-5 fill-green-500">
                         <use href="#whatsapp-icon"></use>
                     </svg>
                 </a>
 
                 <a href="tel:08123916766"
-                    class="bg-black hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
-                    <svg class="size-5 fill-white">
+                    class="bg-black/20 hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
+                    <svg class="size-5 fill-black">
                         <use href="#phone-icon"></use>
                     </svg>
                 </a>
 
                 <a href="https://www.instagram.com/ecoshield_fumigation/"
-                    class="bg-black hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
-                    <svg class="size-5 fill-white">
+                    class="bg-pink-500/20 hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
+                    <svg class="size-5 fill-pink-500">
                         <use href="#instagram-icon"></use>
                     </svg>
                 </a>
@@ -95,22 +97,22 @@
                 <div class="flex justify-between gap-x-2 lg:hidden">
 
                     <a href="https://api.whatsapp.com/send?phone=2348123916766"
-                        class="bg-white hover:scale-95 transition-all hover:shadow-lg inline-flex justify-center items-center size-10 rounded-full">
-                        <svg class="size-5 fill-black">
+                        class="bg-green-500/10 hover:scale-95 transition-all hover:shadow-lg inline-flex justify-center items-center size-10 rounded-full">
+                        <svg class="size-5 fill-green-500">
                             <use href="#whatsapp-icon"></use>
                         </svg>
                     </a>
 
                     <a href="tel:08123916766"
-                        class="bg-white hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
-                        <svg class="size-5 fill-black">
+                        class="bg-white/10 hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
+                        <svg class="size-5 fill-white">
                             <use href="#phone-icon"></use>
                         </svg>
                     </a>
 
                     <a href="https://www.instagram.com/ecoshield_fumigation/"
-                        class="bg-white hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
-                        <svg class="size-5 fill-black">
+                        class="bg-pink-500/10 hover:scale-95 transition-all hover:shadow-lg  inline-flex justify-center items-center size-10 rounded-full">
+                        <svg class="size-5 fill-pink-500">
                             <use href="#instagram-icon"></use>
                         </svg>
                     </a>
@@ -132,17 +134,17 @@
     <div class=" relative pt-20 lg:pt-2">
         <!-- Hero -->
         <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
-            <!-- Grid -->
-            <div class="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
-                <div class="lg:col-span-3">
+            <div class="flex flex-col lg:flex-row lg:items-center">
+                <div class="w-full lg:w-6/12">
+
                     <h1 class="block text-center lg:text-left text-3xl font-bold sm:text-4xl md:text-5xl lg:text-5xl">
                         <span
-                            class="bg-gradient-to-t from-teal-600 to-green-600 font-sans text-transparent bg-clip-text">Ecoshield</span>
+                            class="bg-gradient-to-tr from-black to-slate-600 text-transparent bg-clip-text font-['Futura']">Ecoshield</span>
                         got you covered safeguarding your Home and Health
                     </h1>
 
                     <p class="mt-3 lg:mt-5 text-lg text-slate-900 text-center lg:text-left">
-                        Transforming Homes, Schools, and Businesses: Creating Pest-Free Havens for Everyone!
+                        Transforming Homes, Schools, Office and Business spaces: Creating Pest-Free Havens for Everyone!
                     </p>
 
 
@@ -159,9 +161,31 @@
                 </div>
                 <!-- End Col -->
 
-                <div class="lg:col-span-4 mt-10 lg:mt-0 lg:w-[550px]">
-                    <img class="w-full rounded-xl" src="./images/Hero-Image-3.png" alt="Image Description">
-                </div>
+                <swiper-container class="w-full lg:w-6/12" pagination="true" pagination-clickable="true" loop="true"
+                    space-between="30" centered-slides="true" autoplay-delay="3000" effect="coverflow"
+                    grab-cursor="true" centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50"
+                    coverflow-effect-stretch="0" coverflow-effect-depth="100" coverflow-effect-modifier="1"
+                    coverflow-effect-slide-shadows="true" autoplay-disable-on-interaction="false">
+
+                    <style>
+
+                    </style>
+                    <swiper-slide>
+                        <img class="w-full rounded-xl h-[300px] lg:h-[400px] bg-black/10 object-cover "
+                            src="./images/Hero-Image-1.jpeg" alt="Image Description">
+
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img class="w-full rounded-xl h-[300px] lg:h-[400px] bg-black/10 object-contain "
+                            src="./images/Hero-Image-2.png" alt="Image Description">
+
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img class="w-full rounded-xl h-[300px] lg:h-[400px] bg-black/10 object-contain "
+                            src="./images/Hero-Image-3.png" alt="Image Description">
+
+                    </swiper-slide>
+                </swiper-container>
                 <!-- End Col -->
             </div>
             <!-- End Grid -->
@@ -215,12 +239,11 @@
                 <div class="mt-5">
                     <h3 class="mt-5 font-medium text-lg text-white">Schedule Appointment</h3>
                     <p class="mt-1 text-white">
-                        "Ready to schedule your pest-free transformation? It's as easy as one, two,
-                        squeak-free! Simply click, call, or email to book your appointment with [Company Name] today.
-                        Our expert team will swiftly arrange a time that suits you, ensuring a hassle-free experience
-                        from start to finish.
-                        Don't let pests dictate your schedule – take control and schedule us now!"
-
+                        Ready to take the first step towards a pest-free space?
+                        We're here to help!Reach out to our dedicated team and let's exterminate these pests.Whether you
+                        have a question ,need a quote or you're ready to schedule an appointment, we're just a Dial/DM
+                        away.
+                        Don't wait, contact us now and reclaim your space!
                     </p>
                 </div>
             </div>
@@ -299,7 +322,8 @@
                             your ultimate solution for a pest-free environment.
                             Say goodbye to unwanted guests and hello to fresh, clean spaces.
                             With our expert fumigation services, we guarantee a breath of relief.
-                            Trust us to safeguard your home or business, ensuring peace of mind every step of the way.
+                            Trust us to safeguard your home or business space, ensuring peace of mind every step of the
+                            way.
                             Embrace a pest-free future with Ecoshield today!"
 
                         </p>
@@ -377,6 +401,22 @@
                                     Conditions</a></p>
                             <p><a class="hover:text-white text-slate-400" href="./privacy.html">Privacy Policy</a></p>
                             <p><a class="hover:text-white text-slate-400" href="./license.html">License</a></p>
+                            <p><a class="hover:text-white text-slate-400 flex items-center"
+                                    href="https://api.whatsapp.com/send?phone=2348141625004&text=Hello Mark, I want your services, in building my website.">
+                                    Built with &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="size-4">
+                                        <linearGradient id="rfnSdEsI6O1VXqLULs0jUa" x1="15.595" x2="35.333" y1="4.867"
+                                            y2="35.264" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#f44f5a" />
+                                            <stop offset=".443" stop-color="#ee3d4a" />
+                                            <stop offset="1" stop-color="#e52030" />
+                                        </linearGradient>
+                                        <path fill="url(#rfnSdEsI6O1VXqLULs0jUa)"
+                                            d="M24,12.25c0,0,4.701-5.25,10.5-5.25S45,11.765,45,17.5c0,9.869-15.466,21.138-19.853,24.135c-0.695,0.475-1.599,0.475-2.294,0C18.466,38.638,3,27.369,3,17.5C3,11.765,7.701,7,13.5,7S24,12.25,24,12.25z" />
+                                    </svg>&nbsp;
+                                    by MarkThaValor
+                                </a></p>
+
                         </div>
                     </div>
                     <!-- End Col -->
@@ -405,6 +445,10 @@
     </footer>
 
     <script src="./scripts/alpine.js"></script>
+    <script src="./scripts/swiper-element-bundle.min.js"></script>
+
+
+
     <svg style="display: none; visibility: hidden;">
         <symbol id="phone-icon" viewBox="0 0 50 50">
             <path
